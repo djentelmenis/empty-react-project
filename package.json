@@ -4,7 +4,8 @@
   "private": true,
   "documentation": "https://confluence.ifint.biz/display/EC/Atlas+Editor+v3",
   "scripts": {
-    "start": "webpack serve --config webpack.dev.config.ts"
+    "start": "webpack serve --config webpack.dev.config.ts",
+    "build": "webpack --config webpack.prod.config.ts"
   },
   "dependencies": {
     "react": "^17.0.1",
@@ -25,6 +26,7 @@
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
     "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
     "eslint": "^7.20.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-claims-intake": "^1.2.0",
@@ -36,6 +38,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^3.10.1",
+    "eslint-webpack-plugin": "^2.5.2",
     "fork-ts-checker-webpack-plugin": "^6.1.0",
     "html-webpack-plugin": "^5.1.0",
     "prettier": "^2.2.1",

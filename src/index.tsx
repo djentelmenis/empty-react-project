@@ -9,27 +9,16 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// if (module.hot) {
-//   console.log('✅  Server-side HMR Enabled!');
-
-//   module.hot.accept('./server', () => {
-//     console.log('🔁  HMR Reloading `./server`...');
-//     server.removeListener('request', currentApp);
-//     const newApp = require('./server').default;
-//     server.on('request', newApp);
-//     currentApp = newApp;
-//   });
-// }
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 // @ts-ignore
 if (module.hot) {
   console.log('✅  Server-side HMR Enabled!');
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   module.hot.accept('./App', () => {
-    console.log('🔁  HMR Reloading `./server`...');
+    console.log('🔁  HMR Reloading');
 
     ReactDOM.render(
       <React.StrictMode>
