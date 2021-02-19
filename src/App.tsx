@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { hot } from 'react-hot-loader/root';
 
+import classes from './App.module.scss';
+
 const App = () => {
   const [count, setCount] = useState(0);
 
@@ -10,7 +12,7 @@ const App = () => {
   }, [count, setCount]);
 
   return (
-    <p>
+    <p className={classes.test}>
       Page has been open for <code>{count}</code> seconds.
     </p>
   );
