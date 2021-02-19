@@ -2,6 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 
 const config: webpack.Configuration = {
   mode: 'development',
@@ -22,6 +23,7 @@ const config: webpack.Configuration = {
               '@babel/preset-react',
               '@babel/preset-typescript',
             ],
+            plugins: ['react-refresh/babel'],
           },
         },
       },
@@ -29,15 +31,19 @@ const config: webpack.Configuration = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      'react-dom': '@hot-loader/react-dom',
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
     }),
-    new webpack.HotModuleReplacementPlugin(),
     new ForkTsCheckerWebpackPlugin({
       async: false,
     }),
+    new webpack.HotModuleReplacementPlugin(),
+    new ReactRefreshWebpackPlugin(),
   ],
   devtool: 'inline-source-map',
   devServer: {
@@ -46,6 +52,7 @@ const config: webpack.Configuration = {
     port: 4000,
     open: false,
     hot: true,
+    hotOnly: true,
   },
 };
 
