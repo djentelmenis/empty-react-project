@@ -18,12 +18,22 @@ const config: webpack.Configuration = {
         use: {
           loader: 'babel-loader',
           options: {
+            cacheDirectory: true,
             presets: [
               '@babel/preset-env',
               '@babel/preset-react',
               '@babel/preset-typescript',
             ],
             plugins: ['react-refresh/babel'],
+          },
+        },
+      },
+      {
+        test: /\.tsx?/,
+        use: {
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: true,
           },
         },
       },
