@@ -69,6 +69,18 @@ const config: webpack.Configuration = {
     new webpack.HotModuleReplacementPlugin(),
     new ReactRefreshWebpackPlugin(),
   ],
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
   devtool: 'inline-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'build'),
