@@ -12,7 +12,6 @@ module.exports = {
     },
   },
   rules: {
-    // "some-rule-i-dont-want": "off",
-    // "some-rule-i-want-but-cant-fix-now": "warn",
+    'linebreak-style': ['error', 'unix'],
   },
 };
