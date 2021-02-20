@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "@antv/g6": "^4.1.11",
+    "@if-design-system/color": "^10.1.0",
+    "@if-design-system/selection-controls": "^10.1.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "what-input": "^5.2.10"
   },
   "devDependencies": {
     "@babel/core": "^7.12.17",

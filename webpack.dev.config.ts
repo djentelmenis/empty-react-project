@@ -38,18 +38,28 @@ const config: webpack.Configuration = {
         },
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/i,
         use: [
           'style-loader',
           '@teamsupercell/typings-for-css-modules-loader',
           {
             loader: 'css-loader',
             options: {
-              modules: true,
+              modules: {
+                auto: true,
+              },
             },
           },
           'sass-loader',
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
       },
     ],
   },

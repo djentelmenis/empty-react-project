@@ -3,6 +3,8 @@ import { hot } from 'react-hot-loader/root';
 
 import G6 from '@antv/g6';
 
+import Input from './components/Toggle/Toggle';
+
 import classes from './App.module.scss';
 
 console.log(G6);
@@ -16,9 +18,12 @@ const App = () => {
   }, [count, setCount]);
 
   return (
-    <p className={classes.test}>
-      Page has been open for <code>{count}</code> seconds.
-    </p>
+    <>
+      <p className={classes.test}>
+        Page has been open for <code>{count}</code> seconds.
+      </p>
+      <Input initialValue />
+    </>
   );
 };
 

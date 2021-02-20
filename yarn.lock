@@ -1190,6 +1190,55 @@
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
+"@if-design-system/breakpoint@10.1.0":
+  version "10.1.0"
+  resolved "https://pkgs.dev.azure.com/if-it/40e35854-e791-490e-bec8-da33c65c3187/_packaging/if-design-system/npm/registry/@if-design-system/breakpoint/-/breakpoint-10.1.0.tgz#e836399b49dd97e5113df953ca7828eae227c0d5"
+  integrity sha1-6DY5m0ndl+URPflTyngo6uInwNU=
+
+"@if-design-system/color@10.1.0", "@if-design-system/color@^10.1.0":
+  version "10.1.0"
+  resolved "https://pkgs.dev.azure.com/if-it/40e35854-e791-490e-bec8-da33c65c3187/_packaging/if-design-system/npm/registry/@if-design-system/color/-/color-10.1.0.tgz#40a616006e1a1fa071dbe1e3639649a81ab18187"
+  integrity sha1-QKYWAG4aH6Bx2+HjY5ZJqBqxgYc=
+
+"@if-design-system/core@10.1.0":
+  version "10.1.0"
+  resolved "https://pkgs.dev.azure.com/if-it/40e35854-e791-490e-bec8-da33c65c3187/_packaging/if-design-system/npm/registry/@if-design-system/core/-/core-10.1.0.tgz#170e5639f9ed9f4bf706979e255d1fa163513677"
+  integrity sha1-Fw5WOfntn0v3BpeeJV0foWNRNnc=
+  dependencies:
+    "@if-design-system/breakpoint" "10.1.0"
+    "@if-design-system/color" "10.1.0"
+    "@if-design-system/typography" "10.1.0"
+    "@if-design-system/util" "10.1.0"
+
+"@if-design-system/selection-controls@^10.1.0":
+  version "10.1.0"
+  resolved "https://pkgs.dev.azure.com/if-it/40e35854-e791-490e-bec8-da33c65c3187/_packaging/if-design-system/npm/registry/@if-design-system/selection-controls/-/selection-controls-10.1.0.tgz#4b68978db69ef3eeb07286f29f332a9ceccf81bf"
+  integrity sha1-S2iXjbae8+6wcobynzMqnOzPgb8=
+  dependencies:
+    "@if-design-system/breakpoint" "10.1.0"
+    "@if-design-system/color" "10.1.0"
+    "@if-design-system/core" "10.1.0"
+    "@if-design-system/typography" "10.1.0"
+    "@if-design-system/util" "10.1.0"
+
+"@if-design-system/typography@10.1.0":
+  version "10.1.0"
+  resolved "https://pkgs.dev.azure.com/if-it/40e35854-e791-490e-bec8-da33c65c3187/_packaging/if-design-system/npm/registry/@if-design-system/typography/-/typography-10.1.0.tgz#3c22d05e1bcb94c3f60843008ca471065b3a441d"
+  integrity sha1-PCLQXhvLlMP2CEMAjKRxBls6RB0=
+  dependencies:
+    "@if-design-system/breakpoint" "10.1.0"
+    "@if-design-system/color" "10.1.0"
+    "@if-design-system/util" "10.1.0"
+    decamelize "^4.0.0"
+
+"@if-design-system/util@10.1.0":
+  version "10.1.0"
+  resolved "https://pkgs.dev.azure.com/if-it/40e35854-e791-490e-bec8-da33c65c3187/_packaging/if-design-system/npm/registry/@if-design-system/util/-/util-10.1.0.tgz#59add13a98833a507cb9e0b330349cccac2dce20"
+  integrity sha1-Wa3ROpiDOlB8ueCzMDSczKwtziA=
+  dependencies:
+    "@if-design-system/breakpoint" "10.1.0"
+    "@if-design-system/color" "10.1.0"
+
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.4.tgz#d4b3549a5db5de2683e0c1071ab4f140904bbf69"
@@ -2641,6 +2690,11 @@ decamelize@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
+
+decamelize@^4.0.0:
+  version "4.0.0"
+  resolved "https://pkgs.dev.azure.com/if-it/_packaging/common-external-packages/npm/registry/decamelize/-/decamelize-4.0.0.tgz#aa472d7bf660eb15f3494efd531cab7f2a709837"
+  integrity sha1-qkcte/Zg6xXzSU79UxyrfypwmDc=
 
 decode-uri-component@^0.2.0:
   version "0.2.0"
@@ -6850,6 +6904,11 @@ websocket-extensions@>=0.1.1:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
   integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
+
+what-input@^5.2.10:
+  version "5.2.10"
+  resolved "https://pkgs.dev.azure.com/if-it/_packaging/common-external-packages/npm/registry/what-input/-/what-input-5.2.10.tgz#f79f5b65cf95d75e55e6d580bb0a6b98174cad4e"
+  integrity sha1-959bZc+V115V5tWAuwprmBdMrU4=
 
 which-module@^2.0.0:
   version "2.0.0"
