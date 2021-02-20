@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { hot } from 'react-hot-loader/root';
 
+import G6 from '@antv/g6';
+
 import classes from './App.module.scss';
+
+console.log(G6);
 
 const App = () => {
   const [count, setCount] = useState(0);

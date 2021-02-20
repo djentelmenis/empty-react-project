@@ -8,6 +8,7 @@
     "build": "webpack --config webpack.prod.config.ts"
   },
   "dependencies": {
+    "@antv/g6": "^4.1.11",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
