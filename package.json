@@ -5,7 +5,9 @@
   "documentation": "https://confluence.ifint.biz/display/EC/Atlas+Editor+v3",
   "scripts": {
     "start": "webpack serve --config webpack.dev.config.ts",
-    "build": "webpack --config webpack.prod.config.ts"
+    "build": "webpack --config webpack.prod.config.ts",
+    "lint": "eslint src",
+    "lint-types": "tsc --noEmit"
   },
   "dependencies": {
     "@antv/g6": "^4.1.11",

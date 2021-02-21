@@ -16,15 +16,14 @@
     "isolatedModules": true,
     "noEmit": false,
     "jsx": "react",
-    "sourceMap": true
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
   "include": [
     "src",
     "webpack.dev.config.ts",
     "webpack.prod.config.ts",
-    ".eslintrc.js",
-  ],
-  "files": [
-    "node_modules/@test/testFile.ts"
+    ".eslintrc.js"
   ]
 }
