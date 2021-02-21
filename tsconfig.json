@@ -24,6 +24,8 @@
     "src",
     "webpack.dev.config.ts",
     "webpack.prod.config.ts",
-    ".eslintrc.js"
+    ".eslintrc.js",
+    "jest.config.ts",
+    "__mocks__"
   ]
 }

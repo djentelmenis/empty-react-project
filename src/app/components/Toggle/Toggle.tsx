@@ -20,7 +20,7 @@ const Input = ({ initialValue }: IInputProps): JSX.Element => {
         id="selection-controls-implementation-toggle-2"
         type="checkbox"
         checked={isToggled}
-        onClick={() => setIsToggled(!isToggled)}
+        onChange={() => setIsToggled(!isToggled)}
       />
       <label
         className={`if ${classes.test}`}
